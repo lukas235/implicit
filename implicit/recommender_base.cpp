@@ -15,7 +15,6 @@
             "-std=c++11"
         ],
         "extra_link_args": [
-            "-Wl,-rpath,/usr/local/opt/gcc/lib/gcc/8/",
             "-fopenmp",
             "-std=c++11"
         ],
@@ -3057,12 +3056,12 @@ static PyObject *__pyx_pf_8implicit_16recommender_base_15RecommenderBase_4rank_i
  *     @abstractmethod
  *     def similar_users(self, userid, N=10):             # <<<<<<<<<<<<<<
  *         """
- *         Calculates a list of similar items
+ *         Calculates a list of similar users
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_8implicit_16recommender_base_15RecommenderBase_7similar_users(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8implicit_16recommender_base_15RecommenderBase_6similar_users[] = "\n        Calculates a list of similar items\n\n        Parameters\n        ----------\n        userid : int\n            The row id of the user to retrieve similar users for\n        N : int, optional\n            The number of similar users to return\n\n        Returns\n        -------\n        list\n            List of (userid, score) tuples\n        ";
+static char __pyx_doc_8implicit_16recommender_base_15RecommenderBase_6similar_users[] = "\n        Calculates a list of similar users\n\n        Parameters\n        ----------\n        userid : int\n            The row id of the user to retrieve similar users for\n        N : int, optional\n            The number of similar users to return\n\n        Returns\n        -------\n        list\n            List of (userid, score) tuples\n        ";
 static PyMethodDef __pyx_mdef_8implicit_16recommender_base_15RecommenderBase_7similar_users = {"similar_users", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8implicit_16recommender_base_15RecommenderBase_7similar_users, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8implicit_16recommender_base_15RecommenderBase_6similar_users};
 static PyObject *__pyx_pw_8implicit_16recommender_base_15RecommenderBase_7similar_users(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   CYTHON_UNUSED PyObject *__pyx_v_self = 0;
@@ -21807,7 +21806,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     @abstractmethod
  *     def similar_users(self, userid, N=10):             # <<<<<<<<<<<<<<
  *         """
- *         Calculates a list of similar items
+ *         Calculates a list of similar users
  */
   __pyx_tuple__30 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_userid, __pyx_n_s_N); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
@@ -22696,7 +22695,7 @@ if (!__Pyx_RefNanny) {
  *     @abstractmethod
  *     def similar_users(self, userid, N=10):             # <<<<<<<<<<<<<<
  *         """
- *         Calculates a list of similar items
+ *         Calculates a list of similar users
  */
   __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_8implicit_16recommender_base_15RecommenderBase_7similar_users, 0, __pyx_n_s_RecommenderBase_similar_users, NULL, __pyx_n_s_implicit_recommender_base, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
